@@ -10,5 +10,5 @@ Where-Object -FilterScript {
                 ($_.SID -notcontains 'S-1-5-18')
                 } | 
 
-select PSComputerName, SID, LocalPath | Format-table -AutoSize
+Select-Object PSComputerName, SID, LocalPath | Format-table -AutoSize
  
